@@ -1,7 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import TodoList from "./Todo/TodoList";
 import Context from "./context";
 import AddTodo from "./Todo/AddTodo";
+
+//
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+//   .then(response => response.json())
+//   .then(json => console.log(json))
 
 function App() {
   const [todos, setTodos] = React.useState(
